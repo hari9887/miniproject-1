@@ -19,9 +19,9 @@ document.querySelectorAll("nav a").forEach((anchor) => {
   });
 });
 
-// ========================
-// Page Load Sequential Reveal
-// ========================
+
+
+
 window.addEventListener("load", () => {
   document.body.classList.add("loaded"); // fade in body
 
@@ -37,13 +37,13 @@ window.addEventListener("load", () => {
           item.classList.add("fade-in");
         }, i * 200);
       });
-    }, index * 800); // delay each section (0.8s apart)
+    }, index * 800); 
   });
 });
 
-// ========================
+
 // Scroll-based Reveal (fallback for long pages)
-// ========================
+
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
